@@ -1,0 +1,47 @@
+<!--
+  Generated template for the AddShoppingItemPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color= "secondary">
+    <ion-title>Ajouter un article à la liste</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<!-- Creation of my items to buy and its
+    caracteristics
+  -->
+  <ion-item>
+    <ion-label >Nom :</ion-label>
+    <ion-input placeholder="potatoes" 
+      [(ngModel)]="item.name">
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Quantité : </ion-label>
+    <ion-input type="number"  placeholder="5"
+    [(ngModel)]="item.quantity">
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Prix: </ion-label>
+    <ion-input type="number" placeholder="2" 
+    [(ngModel)]="item.price"> 
+    </ion-input>
+  </ion-item>
+
+  <button ion-button block round (click)="addItem(item)">
+    Ajouter un article
+  </button>
+
+  
+</ion-content>

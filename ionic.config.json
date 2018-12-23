@@ -1,0 +1,7 @@
+{
+  "name": "ShoppingProject",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
